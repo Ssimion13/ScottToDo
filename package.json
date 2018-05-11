@@ -1,8 +1,11 @@
 {
   "name": "scott-to-do",
   "version": "0.1.0",
-  "main": "index.js",
   "private": true,
+  "engines": {
+    "npm": "5.6.0",
+    "node": "8.11.1"
+  },
   "dependencies": {
     "axios": "^0.18.0",
     "bcrypt": "^2.0.1",
