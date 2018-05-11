@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700|Roboto');
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  background-color: whitesmoke;
+}
+
+body {
+
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.frontPageContent1 {
+  width: 100%;
+  background-color: #578493
+}
+.Jumbotron {
+  height: 100%;
+  text-align: center;
+}
+
+.frontPageContent2 {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  background-color: rgba(36, 16, 163, 0.795)
+}
+
+.navbarMainDiv {
+  display: grid;
+  grid-template-areas: 
+  "Title Links ";
+  align-items: center;
+  height: 100px;
+  background-color: navy;
+}
+.navLinks {
+  display: flex;
+  justify-content: space-around;
+  grid-area: Links;
+  font-size: 30px;
+}
+.navTitle {
+  grid-area: Title
+}
+.navTitleText {
+  color: whitesmoke;
+  padding-left: 20px;
+}
+.thumbnail {
+  width: 50%;
+  height: 100%;
+}
+
+.footerMainDiv {
+  width: 100%;
+  height: 50px;
+  background-color: teal;
+  bottom: 0;
+}
+.collapseButtons {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.toDoMainDiv {
+  overflow: auto;
+  height: auto;
+  background-color: #2E3494;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+} 
+.createToDoDiv {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 200px;
+  width: 50%;
+  border-radius: 10%;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.createToDoInput {
+  width: 100%;
+  height: 150px;
+}
+.mappedToDos {
+  margin-top: 20px;
+  width: 90%;
+  background-color: lightgrey;
+  padding: 10px;
+  border-radius: 20px;
+}
+.toDoAddButton {
+  height: 50%;
+}
+.toDoComponent{
+  width: 75%;
+}
+.toDoText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.toDo {
+  height: 100px;
+  border-radius: 30px;
+}
+.toDo:nth-child(even) {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: gold
+}
+.toDo:nth-child(odd) {
+  background-color: rgba(255, 231, 44, 0.800)
+}
+.collapsibleToggleButton {
+  width: 200px;
+  height: 100px;
+}
+.thumbnailDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  padding-top: 1rem;
+}
+.middleThumbnailButton {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.hobbyListDiv {
+  background-color: rgba(9, 85, 224, 1.0)
+}
+.longTermDiv {
+  background-color: darkblue;
+}
+.toDoHead{
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 40px;
+  font-size: 35px;
+}
+.title {
+  font-family: 'Open Sans' sans-serif;
+  font-size: 20px;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  word-break: break-all;
+
+
+}
+.description {
+  width: 60%;
+  padding-left: 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
+.loginDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.formDiv {
+  display: flex;
+}
+.formButton {
+  margin-left: 15px;
+}
+
+
+@media (max-width: 700px) {
+  .navbarMainDiv {
+    grid-template-areas: 
+    "Title Links Links Links"
+  }
+  .navTitleText {
+    font-size: 16px;
+  }
+  .navLinks {
+    font-size: 14px;
+  }
+  .collapseButtons {
+    flex-direction: column;
+  }
+  .middleThumbnailButton {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .formDiv {
+    flex-direction: column;
+  }
+}
