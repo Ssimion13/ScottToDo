@@ -6,7 +6,7 @@ const expressJwt = require("express-jwt");
 const mongoose = require('mongoose');
 const app = express();
 const morgan = require('morgan');
-const PORT = process.env.PORT || '7000';
+const port = process.env.PORT || 7000;
 const path = require("path")
 const testy = "hi!";
 
