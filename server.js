@@ -1,4 +1,5 @@
 const env = require("dotenv").config();  
+require("dotenv").config();
 const bodyParser = require("body-parser");
 const express = require("express");
 const expressJwt = require("express-jwt");
@@ -37,6 +38,6 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/ScottToDo', err
 app.get("*", (req, res) => {  
   res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
-app.listen(port, () => {
+app.listen(port, "0.0.0.0", () => {
   console.log("Listening in port " + port)
 });
