@@ -27,4 +27,4 @@ node_modules/
 .idea/
 .vscode/
 *.orig
-.env
+.env"node_modules/" 
