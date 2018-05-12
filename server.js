@@ -6,7 +6,7 @@ const expressJwt = require("express-jwt");
 const mongoose = require('mongoose');
 const app = express();
 const morgan = require('morgan');
-const port = process.env.PORT || 7000;
+const PORT = process.env.PORT || '7000';
 const path = require("path")
 const testy = "hi!";
 
@@ -24,7 +24,7 @@ app.use(morgan('dev'));
 
 
 app.use("/auth", require("./routes/auth"));
-app.use("/api/ToDo", require('./routes/ToDos.js'));
+app.use("/api/ToDo", require('./routes/Todos.js'));
 app.use("/api/Long", require('./routes/Long.js'));
 app.use("/api/Hobby",require('./routes/Hobby.js'));
 
