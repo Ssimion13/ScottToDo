@@ -41,6 +41,9 @@ export default class Example extends React.Component {
           {isAuthenticated ?
             <Nav navbar>
               <NavItem>
+                <Link to="GhostRacer" > Morning Ghost Racer </Link>
+              </NavItem>
+              <NavItem>
                <Link to="ToDoList"> Current To Do List </Link>
               </NavItem>
               <NavItem>

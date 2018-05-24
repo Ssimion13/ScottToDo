@@ -20,7 +20,7 @@ class LongTerm extends Component {
     componentDidMount() {
 
             var config = {
-                headers: {'Authorization': "bearer" + " " + localStorage.token}
+                headers: {Authorization: "bearer " + localStorage.token}
             }
         axios.get("/api/Long", config)
         .then(response => {
@@ -55,7 +55,7 @@ class LongTerm extends Component {
     }
     addToDo(ToDo){
         var config = {
-            headers: {'Authorization': "bearer" + " " + localStorage.token}
+            headers: {Authorization: "bearer " + localStorage.token}
         }
         axios.post('/api/Long', ToDo, config).then(response =>{
             this.setState((prevState) => {
@@ -69,7 +69,7 @@ class LongTerm extends Component {
 
     deleteToDo(id){
         var config = {
-            headers: {'Authorization': "bearer" + " " + localStorage.token}
+            headers: {Authorization: "bearer " + localStorage.token}
         }
         axios.delete(`/api/Long/${id}`, config)
             this.setState(prevState=>{

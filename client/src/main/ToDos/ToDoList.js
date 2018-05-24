@@ -21,7 +21,7 @@ class ToDoList extends Component {
     componentDidMount() {
 
             var config = {
-                headers: {'Authorization': "bearer" + " " + localStorage.token}
+                headers: {Authorization: "bearer " + localStorage.token}
             }
         axios.get("/api/ToDo", config)
         .then(response => {
@@ -62,7 +62,7 @@ class ToDoList extends Component {
     }
     addToDo(ToDo){
         var config = {
-            headers: {'Authorization': "bearer" + " " + localStorage.token}
+            headers: {Authorization: "bearer " + localStorage.token}
         }
         axios.post('/api/ToDo', ToDo, config).then(response =>{
            
@@ -77,7 +77,7 @@ class ToDoList extends Component {
 
     deleteToDo(id){
         var config = {
-            headers: {'Authorization': "bearer" + " " + localStorage.token}
+            headers: {Authorization: "bearer " + localStorage.token}
         }
         axios.delete(`/api/ToDo/${id}`, config)
             this.setState(prevState=>{

@@ -30,7 +30,8 @@ app.use("/api/Hobby",require('./routes/Hobby.js'));
 
 
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/ScottToDo', err => {
+//process.env.MONGODB_URI || 
+mongoose.connect('mongodb://localhost/ScottToDo', err => {
   if (err) throw err;
   console.log("DB Connected.")
 })
@@ -38,6 +39,6 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/ScottToDo', err
 app.get("*", (req, res) => {  
   res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
-app.listen(process.env.PORT, "0.0.0.0", () => {
+app.listen(process.env.PORT, () => {
   console.log("Listening in port " + port)
 });

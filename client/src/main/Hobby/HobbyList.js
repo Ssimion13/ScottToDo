@@ -20,7 +20,7 @@ class HobbyList extends Component {
 
     componentDidMount() {
         var config = {
-            headers: {'Authorization': "bearer" + " " + localStorage.token}
+            headers: {Authorization: "bearer " + localStorage.token}
         }
         axios.get("/api/Hobby", config)
         .then(response => {
@@ -57,7 +57,7 @@ class HobbyList extends Component {
     }
     addToDo(Hobby){
         var config = {
-            headers: {'Authorization': "bearer" + " " + localStorage.token}
+            headers: {Authorization: "bearer " + localStorage.token}
         }
         axios.post('/api/Hobby', Hobby, config).then(response =>{
            
@@ -72,7 +72,7 @@ class HobbyList extends Component {
 
     deleteToDo(id){
         var config = {
-            headers: {'Authorization': "bearer" + " " + localStorage.token}
+            headers: {Authorization: "bearer " + localStorage.token}
         }
         axios.delete(`/api/Hobby/${id}`, config)
             this.setState(prevState=>{

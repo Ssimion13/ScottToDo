@@ -36,5 +36,5 @@
     "deploy": "npm run build && mv build/index.html build/200.html && surge build"
   },
   
-  "proxy": "http://localhost:7000/"
+  "proxy": "http://localhost:7000"
 }

@@ -5,6 +5,8 @@ import Navbar from "./Navbar";
 import ToDoList from "./ToDos/ToDoList.js"
 import LongTerm from "./LongTerm/LongTerm.js"
 import HobbyList from "./Hobby/HobbyList.js"
+import GhostRacer from "./GhostRacer/GhostRacer.js"
+
 
 class App extends Component {
 
@@ -14,6 +16,7 @@ class App extends Component {
       <div className="App">
       <Navbar />
       <Switch>
+      <Route path="/GhostRacer" component={GhostRacer} />
       <Route path="/ToDoList" component={ToDoList} />
       <Route path="/LongTerm" component={LongTerm} />
       <Route path="/HobbyList" component={HobbyList} />
